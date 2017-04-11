@@ -1,0 +1,52 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+body{
+  background-color: white;
+  color: #333;
+  font-family: roboto, sans-serif;
+  line-height: 1.5em;
+}
+
+#logo{
+  width: 128px;
+}
+
+a{
+  color: #555;
+}
+
+section{
+  max-width: 480px;
+  margin: auto;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 600px) {
+    #logo{
+      width: 64px;
+      position: relative;
+      left: 50%;
+      top: -32px;
+      margin-left: -32px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    #logo{
+      position: absolute;
+      left: -200px;
+      top: 40px;
+    }
+  }
+
+  p{
+    margin-bottom: 1.5em;
+  }
+
+  .summary{
+    font-weight: bold;
+  }
+}
